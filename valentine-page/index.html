@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="single">
+
+<div class="container">
+
+  <!-- Toggle -->
+  <div class="toggle">
+    <button id="singleBtn" class="active">Single 🖤</button>
+    <button id="coupleBtn">Couple ❤️</button>
+  </div>
+
+  <!-- Content -->
+ <div class="content">
+
+  <!-- VIDEO BANNER -->
+  <video id="bgVideo" autoplay muted loop playsinline></video>
+
+  <!-- TEXT -->
+  <h1 id="title">For Yourself</h1>
+  <p id="desc">Treat yourself with comfort and care.</p>
+
+</div>
+<div class="categories">
+  <div onclick="filterProducts('sleep')">😴<p>Sleep</p></div>
+  <div onclick="filterProducts('travel')">✈️<p>Travel</p></div>
+  <div onclick="filterProducts('gym')">🏋️<p>Gym</p></div>
+  <div onclick="filterProducts('all')">✨<p>All</p></div>
+</div>
+
+
+  <!-- Products -->
+  <div id="products"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
